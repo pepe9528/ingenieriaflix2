@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IngenieríaFlix</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:black;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:35px;
+font-weight:bold;
+color:red;
+}
+
+input{
+padding:10px;
+width:250px;
+border:none;
+border-radius:8px;
+}
+
+/* HERO */
+
+.hero{
+height:400px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding-left:60px;
+
+background:
+linear-gradient(to right,
+rgba(0,0,0,.9),
+rgba(0,0,0,.2)),
+
+url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+/* ADS */
+
+.ads{
+text-align:center;
+padding:20px;
+background:#222;
+font-size:20px;
+}
+
+/* SECCIONES */
+
+.seccion{
+padding:30px;
+}
+
+.seccion h2{
+margin-bottom:20px;
+}
+
+/* CARDS */
+
+.grid{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.card{
+width:300px;
+background:#222;
+border-radius:12px;
+overflow:hidden;
+cursor:pointer;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.08);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<header>
+
+<div class="logo">
+IngenieríaFlix
+</div>
+
+<input type="text" placeholder="Buscar...">
+
+</header>
+
+
+
+<section class="hero">
+
+<h1>
+Aprende Ingeniería
+</h1>
+
+<p>
+ASM, Arduino, Python y Electrónica
+</p>
+
+</section>
+
+
+
+<div class="ads">
+ESPACIO PARA ANUNCIOS 💰
+</div>
+
+
+
+<section class="seccion">
+
+<h2>
+ASM
+</h2>
+
+
+<div class="grid">
+
+
+<div class="card"
+onclick="window.open('https://youtube.com')">
+
+<img src="https://picsum.photos/300/180?1">
+
+<h3>
+ASM 8086
+</h3>
+
+</div>
+
+
+
+<div class="card"
+onclick="window.open('https://youtube.com')">
+
+<img src="https://picsum.photos/300/180?2">
+
+<h3>
+Macros y procedimientos
+</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="seccion">
+
+<h2>
+Arduino
+</h2>
+
+
+<div class="grid">
+
+
+<div class="card"
+onclick="window.open('https://youtube.com')">
+
+<img src="https://picsum.photos/300/180?3">
+
+<h3>
+Arduino desde cero
+</h3>
+
+</div>
+
+
+
+<div class="card"
+onclick="window.open('https://youtube.com')">
+
+<img src="https://picsum.photos/300/180?4">
+
+<h3>
+Sensores
+</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 IngenieríaFlix
+
+</footer>
+
+
+
+</body>
+</html>
