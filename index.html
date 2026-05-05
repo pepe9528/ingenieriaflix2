@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IngenieríaFlix</title>
+
+<link rel="stylesheet"
+href="css/estilos.css">
+
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){
+
+w[l]=w[l]||[];
+
+w[l].push({
+'gtm.start':
+new Date().getTime(),
+event:'gtm.js'
+});
+
+var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),
+dl=l!='dataLayer'
+?'&l='+l:'';
+
+j.async=true;
+
+j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+
+f.parentNode.insertBefore(j,f);
+
+})(window,document,'script',
+'dataLayer',
+'GTM-MZWZQQZM');
+</script>
+<!-- End Google Tag Manager -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+
+<iframe
+src=
+"https://www.googletagmanager.com/ns.html?id=GTM-MZWZQQZM"
+
+height="0"
+width="0"
+
+style=
+"display:none;visibility:hidden">
+
+</iframe>
+
+</noscript>
+<!-- End Google Tag Manager -->
+
+
+
+<div class="menu-btn" id="menuBtn">
+
+☰
+
+</div>
+
+
+
+<div class="sidebar" id="sidebar">
+
+<a href="#inicio">🏠 Inicio</a>
+
+<a href="#cursos">💻 Cursos</a>
+
+<a href="#juegos">🎮 Juegos</a>
+
+<a href="#notas">📝 Apuntes</a>
+
+<a href="#focus">🧘 Enfoque</a>
+
+</div>
+
+
+
+
+
+<section class="hero" id="inicio">
+
+
+<img
+src="img/logo.png"
+class="logo">
+
+
+
+<h1>
+
+IngenieríaFlix
+
+</h1>
+
+
+
+<p>
+
+Aprende ingeniería de forma profesional
+
+</p>
+
+
+
+<button>
+
+Explorar
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+<section class="cards" id="cursos">
+
+
+<div
+class="card"
+onclick="mostrarVideos('asm')">
+
+ASM
+
+</div>
+
+
+
+<div
+class="card"
+onclick="mostrarVideos('python')">
+
+Python
+
+</div>
+
+
+
+<div
+class="card"
+onclick="mostrarVideos('arduino')">
+
+Arduino
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="videos">
+
+</section>
+
+
+
+
+
+
+<section id="juegos">
+
+
+<h1>
+
+🎮 Juegos educativos
+
+</h1>
+
+
+
+<h2>
+
+Domino Hexa Puzzle
+
+</h2>
+
+
+
+<iframe
+src=
+"https://www.madkidgames.com/full/domino-hexa-puzzle"
+
+width="90%"
+height="540">
+
+</iframe>
+
+
+
+
+
+<h2>
+
+Nuts and Bolts
+
+</h2>
+
+
+
+<iframe
+src=
+"https://www.madkidgames.com/full/nuts-and-bolts-screw-puzzle"
+
+width="90%"
+height="540">
+
+</iframe>
+
+
+
+
+
+
+<h2>
+
+Piggy Wiggy
+
+</h2>
+
+
+
+<iframe
+src=
+"https://www.madkidgames.com/full/piggy-wiggy-physics-puzzle"
+
+width="90%"
+height="540">
+
+</iframe>
+
+
+</section>
+
+
+
+
+
+
+
+<section
+class="notas"
+id="notas">
+
+
+<h2>
+
+📝 Apuntes
+
+</h2>
+
+
+
+<textarea
+id="nota">
+
+</textarea>
+
+
+
+<div>
+
+
+<button
+onclick="guardarTXT()">
+
+Guardar PC
+
+</button>
+
+
+
+<button
+onclick="guardarPDF()">
+
+PDF
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section
+class="focus"
+id="focus">
+
+
+<h2>
+
+🧘 Modo enfoque
+
+</h2>
+
+
+
+<div id="timer">
+
+25:00
+
+</div>
+
+
+
+<button
+onclick="pomodoro()">
+
+Iniciar
+
+</button>
+
+
+</section>
+
+
+
+
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
